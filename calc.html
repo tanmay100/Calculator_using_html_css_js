@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div class="top">
+                <div id="history" class="history"></div>
+            </div>
+            <div class="bottom">
+                <div id="result" class="result">0</div>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="button clear" onclick="clearClick()">CE</div>
+            <div class="button clear-all" onclick="clearAllClick()">C</div>
+            <div class="button backspace" onclick="backspace()">Del</div>
+            <div class="button operator" onclick="operatorClick('÷')">&#247;</div>
+
+            <div class="button number" onclick="numberClick(7)">7</div>
+            <div class="button number" onclick="numberClick(8)">8</div>
+            <div class="button number" onclick="numberClick(9)">9</div>
+            <div class="button operator" onclick="operatorClick('×')">&#215;</div>
+
+            <div class="button number" onclick="numberClick(4)">4</div>
+            <div class="button number" onclick="numberClick(5)">5</div>
+            <div class="button number" onclick="numberClick(6)">6</div>
+            <div class="button operator" onclick="operatorClick('-')">-</div>
+
+            <div class="button number" onclick="numberClick(1)">1</div>
+            <div class="button number" onclick="numberClick(2)">2</div>
+            <div class="button number" onclick="numberClick(3)">3</div>
+            <div class="button operator" onclick="operatorClick('+')">+</div>
+
+            <div class="button operator" onclick="changeSign()">&#177;</div>
+            <div class="button number" onclick="numberClick(0)">0</div>
+            <div class="button operator" onclick="dotClick()">.</div>
+            <div class="button operator" onclick="equalClick()">=</div>
+        </div>
+    </div>
+<script src="calc.js"></script>
+    
+</body>
+</html>
